@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>kind editor</title>
+<link href="../../lib/pretty/prettify.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/tablepay.css">
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../lib/dialog/6.0.4/css/ui-dialog.css">
+<link rel="stylesheet" href="../../css/business.css">
+<link rel="stylesheet" href="../../lib/kindeditor/themes/default/default.css">
+
+<script src="../../lib/jquery/1.8.1/jquery.js"></script>
+<script src="../../lib/kindeditor/kindeditor-all.js"></script>
+<script src="../../lib/kindeditor/lang/zh-CN.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    
+      var editor;
+      KindEditor.ready(function(K) {
+        editor = K.create('textarea[name="content"]', {
+          allowFileManager : true
+        });
+        K('input[name=getHtml]').click(function(e) {
+          alert(editor.html());
+        });
+        K('input[name=isEmpty]').click(function(e) {
+          alert(editor.isEmpty());
+        });
+        K('input[name=getText]').click(function(e) {
+          alert(editor.text());
+        });
+        K('input[name=selectedHtml]').click(function(e) {
+          alert(editor.selectedHtml());
+        });
+        K('input[name=setHtml]').click(function(e) {
+          editor.html('<h3>Hello KindEditor</h3>');
+        });
+        K('input[name=setText]').click(function(e) {
+          editor.text('<h3>Hello KindEditor</h3>');
+        });
+        K('input[name=insertHtml]').click(function(e) {
+          editor.insertHtml('<strong>插入HTML</strong>');
+        });
+        K('input[name=appendHtml]').click(function(e) {
+          editor.appendHtml('<strong>添加HTML</strong>');
+        });
+        K('input[name=clear]').click(function(e) {
+          editor.html('');
+        });
+      });
+
+
+  });
+
+</script>
+</head>
+<body id="main_body">
+  <div class="ui-standard">
+    <H1>表单验证</H1>
+    <!--<p><strong>示例</strong></p>-->
+    <div>
+      <form>
+        <textarea name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor</textarea>
+        <p>
+          <input type="button" name="getHtml" value="取得HTML" />
+          <input type="button" name="isEmpty" value="判断是否为空" />
+          <input type="button" name="getText" value="取得文本(包含img,embed)" />
+          <input type="button" name="selectedHtml" value="取得选中HTML" />
+          <br />
+          <br />
+          <input type="button" name="setHtml" value="设置HTML" />
+          <input type="button" name="setText" value="设置文本" />
+          <input type="button" name="insertHtml" value="插入HTML" />
+          <input type="button" name="appendHtml" value="添加HTML" />
+          <input type="button" name="clear" value="清空内容" />
+          <input type="reset" name="reset" value="Reset" />
+        </p>
+      </form>
+    </div>
+
+    <p><strong>依赖插件</strong></p>
+    <pre class="prettyprint mt-20 fn-clear" id="html">
+            
+      &lt;link rel="stylesheet" href="../../lib/kindeditor/themes/default/default.css">&lt;/link>
+      &lt;script src="../../lib/kindeditor/kindeditor-all.js">&lt;/script>
+      &lt;script src="../../lib/kindeditor/lang/zh-CN.js">&lt;/script>
+
+    </pre>
+
+    <p><strong>html代码</strong></p>
+    <pre class="prettyprint mt-20 fn-clear" id="html">
+      &lt;form>
+        &lt;textarea name="content" style="width:800px;height:400px;visibility:hidden;">KindEditor&lt;/textarea>
+        &lt;p>
+          &lt;input type="button" name="getHtml" value="取得HTML" />
+          &lt;input type="button" name="isEmpty" value="判断是否为空" />
+          &lt;input type="button" name="getText" value="取得文本(包含img,embed)" />
+          &lt;input type="button" name="selectedHtml" value="取得选中HTML" />
+          &lt;br />
+          &lt;br />
+          &lt;input type="button" name="setHtml" value="设置HTML" />
+          &lt;input type="button" name="setText" value="设置文本" />
+          &lt;input type="button" name="insertHtml" value="插入HTML" />
+          &lt;input type="button" name="appendHtml" value="添加HTML" />
+          &lt;input type="button" name="clear" value="清空内容" />
+          &lt;input type="reset" name="reset" value="Reset" />
+        &lt;/p>
+      &lt;/form>
+    </pre>    
+    
+    <p><strong>js代码</strong></p>
+    <pre class="prettyprint mg_t_20 fn-clear" id="html">
+      var editor;
+      KindEditor.ready(function(K) {
+        editor = K.create('textarea[name="content"]', {
+          allowFileManager : true
+        });
+        K('input[name=getHtml]').click(function(e) {
+          alert(editor.html());
+        });
+        K('input[name=isEmpty]').click(function(e) {
+          alert(editor.isEmpty());
+        });
+        K('input[name=getText]').click(function(e) {
+          alert(editor.text());
+        });
+        K('input[name=selectedHtml]').click(function(e) {
+          alert(editor.selectedHtml());
+        });
+        K('input[name=setHtml]').click(function(e) {
+          editor.html('&lt;h3>Hello KindEditor&lt;/h3>');
+        });
+        K('input[name=setText]').click(function(e) {
+          editor.text('&lt;h3>Hello KindEditor&lt;/h3>');
+        });
+        K('input[name=insertHtml]').click(function(e) {
+          editor.insertHtml('&lt;strong>插入HTML&lt;/strong>');
+        });
+        K('input[name=appendHtml]').click(function(e) {
+          editor.appendHtml('&lt;strong>添加HTML&lt;/strong>');
+        });
+        K('input[name=clear]').click(function(e) {
+          editor.html('');
+        });
+      });
+    </pre>
+  </div>
+</body>
+</html>
+

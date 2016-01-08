@@ -1,0 +1,49 @@
+{
+	"returnCode":"0",
+	"returnMessage":"",
+	"bean":{
+		"waitPersonNum":"32"
+	},
+	"beans":[
+		{
+			"name":"黄华林",
+			"phoneNum":"13612345611",
+			"region":"郑州",
+			"starLevel":"5",
+			"meal":"4G飞享-188 B套餐",
+			"state":"欠费",
+			"channel":"1",
+			"message":"我刚充的话费怎么就不足10元呢？？"
+		},
+		{
+			"name":"张亚伟",
+			"phoneNum":"13612342358",
+			"region":"郑州",
+			"starLevel":"3",
+			"meal":"4G飞享-158 B套餐",
+			"state":"欠费",
+			"channel":"2",
+			"message":"你好，你们的华为Ascend P1手机，有没有红色的？"
+		},
+		{
+			"name":"刘志伟",
+			"phoneNum":"13612345672",
+			"region":"郑州",
+			"starLevel":"2",
+			"meal":"4G飞享-158 A套餐",
+			"state":"欠费",
+			"channel":"3",
+			"message":"我的Iphone 4 越狱后无法上网了，请问怎么处理？"
+		},
+		{
+			"name":"张勇",
+			"phoneNum":"13612349876",
+			"region":"洛阳",
+			"starLevel":"4",
+			"meal":"4G飞享-158 B套餐",
+			"state":"欠费",
+			"channel":"4",
+			"message":"我的Iphone 4 越狱后无法上网了，请问怎么处理？"
+		}
+	]
+}

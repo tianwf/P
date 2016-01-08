@@ -1,0 +1,82 @@
+
+html,body {     height: 100%;
+    }
+body {    background: #e8e8e8;}
+
+#content .flagContainer { float: left;  }
+#content .flagContainer .leftSc {    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -24px;}
+
+#header {    position: absolute;
+    display: block;
+    width: 1280px;
+    left: 50%;
+    margin-left: -640px;}
+
+
+#content {    position: absolute;
+    display: block;
+    width: 1280px;
+    left: 50%;
+    margin-left: -640px; top: 50px; bottom: 0px;    
+    background-color: #e8e8e8;}
+#content .nav {
+    position: absolute;
+    width: 245px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+#content .flagContainer {
+    position: absolute;
+    width: 20px;
+    top: 0px;
+    left: 245px;
+    bottom: 0px;
+}
+#content .section {
+    position: absolute;
+    left: 265px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+/*布局控制*/
+#content.layout1 .nav { display: none; }
+#content.layout1 .userInfoCont { display: none; }
+#content.layout2 .nav { display: none; }
+#content.layout2 .flagContainer,#content.layout1 .flagContainer { left: 0px;}
+#content.layout2 .section,#content.layout1 .section { left: 20px;}
+
+/*左侧列表*/
+#content .nav .clientList {    position: absolute;
+    top: 82px;
+    bottom: 0px;
+    width: 100%;}
+#content .nav .waiting-num { background: #fff;}
+/*
+div.nav{ background: #fff; padding: 0; margin-right: 4px;}
+*/
+
+
+/*.nav{width:245px;float:left;margin-right:5px;padding-top:3px;}*/
+/*消息列表*/
+.nav .msgInfo{background:url(../img/image0008.png) left center repeat-y #fff;padding:15px 10px 5px 15px;zoom:1}
+.nav .msgInfo.line2{background-image:url(../img/image0009.png)}
+.nav .msgInfo.state1{background-color:#fffacc;}
+.nav .msgInfo:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.nav .msgInfo.select,.nav .msgInfo:hover{background-color:#62c2eb;color:#fff}
+.nav .msgInfo .msgType{width:30px;float:left;height:50px;margin:0 5px;}
+.nav .panel{width:245px;}
+.nav .searchPanel { width:245px;}
+
+
+/*客户信息*/
+#content .section .userInfoCont{ height: 50px;}
+#content .section #chatWarpContainer .chatWarp .tab {    position: absolute;
+    left: 0px;
+    top: 50px;}

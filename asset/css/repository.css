@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+#repositoryBody{padding-right:20px;}
+/*地址页签*/
+#repositoryTab{border-bottom:1px solid #c6c6c6;}
+/*地址页签 end*/
+/*知识库头部*/
+#repositoryHeader{}
+/*知识库头部 end*/
+/*知识库内容*/
+#repositoryContent{}
+/*知识库内容 end*/

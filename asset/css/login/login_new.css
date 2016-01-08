@@ -1,0 +1,68 @@
+html{background-color:#f9f9f9;overflow:hidden}
+body{background:url("../../img/login/top_bg.png") repeat-x;overflow:hidden}
+.bodyCss{background:url("../../img/login/top_bg.png") repeat-x;overflow:hidden;height:100%;text-align: center;}
+.loginWrap{background:url("../../img/login/bottom_bg.png") repeat-x left bottom;/*min-height:690px;*/position: relative;height:100%;}
+.loginArea{background:url("../../img/login/head.png") no-repeat;padding-top:170px;}
+.loginArea{width:1008px;margin:0 auto;}
+.main{background:url("../../img/login/login_cover.png") no-repeat 75px 0;padding:0 0 0 535px;height:293px;position: relative;}
+.fieldset {padding-left:90px;padding-top: 10px;zoom:1}
+.fieldset dt{;color:#0161aa;clear:both;float:left;width:90px;line-height:26px;margin:0 0 0 -90px;text-align:left;}
+.fieldset dd{float:left;padding-bottom:20px;width:100%;line-height: 26px;}
+.fieldset:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden }
+
+.loginTitle{background:url("../../img/login/login_title_bg.png") no-repeat left bottom;padding:0 0 5px;margin:0 0 40px;line-height: 35px;height: 35px;position:relative}
+.loginTitle h2{font-size:18px; font-family: "΢���ź�",Arial;color:#0161aa;background:url("../../img/login/login_title.png") no-repeat;padding-left:35px;}
+.download{color:#028fe7;text-decoration:underline;position:absolute;top:5px;right:122px;}
+.fieldset dd.loginErrow{background:url("../../img/login/login_errow.png") no-repeat;padding-left:18px;color:#FF0000;line-height: 16px;visibility: hidden; }
+.textInput,.textInput .right,.textInput .center {
+	background: url("../../img/login/textImg.png") no-repeat left top;
+	display: inline-block;
+}
+.textInput{padding-left: 4px;width:229px;}
+.textInput .right {
+	background-position:right bottom;
+	padding-right: 4px;
+}
+.textInput .center {
+	background-position:center center;
+	background-repeat:repeat-x;
+	height: 26px;
+}
+.textInput .center input[type="text"], .textInput .center input[type="password"] {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #333333;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	width:214px;
+	padding-left:11px;
+}
+.textInputCode{width:125px;float:left;margin-right:5px;display:inline}
+.textInputCode .center input[type="text"]{width:112px;}
+
+.loginSubmit,.loginReset{background:url("../../img/login/login_btn.png") no-repeat;text-align:center;font-size:14px;color:#333;vertical-align: middle;width:120px;height:26px;display:inline-block;}
+.loginSubmit:hover,.loginReset:hover{color:#0a80e3;}
+.loginReset{background-position:0 -26px;height:28px;width:84px;margin-left:28px;}
+.loginCode{vertical-align: -8px;}
+
+
+.checkboxs{padding:15px 0 9px;overflow: hidden;}
+.checkboxs .checkbox{padding-right:55px;float:left; cursor:pointer;height:12px;line-height:14px;}
+.checkbox .customcheckbox { background: url(../../img/login/checkBox.png) no-repeat center top; height: 12px; width: 12px;display: inline-block;float:left;margin: 0 5px 0 0;vertical-align: middle; }
+.checkbox .customcheckbox.checked { background: url(../../img/login/checkBox.png) no-repeat center bottom; }
+.customcheckbox input{opacity: 0;filter:alpha(opacity=0);  }
+.fieldset dd .checkboxs span{display:inline-block;line-height:14px;color:#4c4c4c; }
+
+.foot{text-align:center;color:#619bbd;position:absolute;bottom:50px;width: 100%;left:0px;}
+
+.fieldset .test{padding-left:18px;display:block;text-align:left;color:#4c4c4c;}
+.fieldset .checkboxsTest label{padding-left:17px;}
+
+
+
+
+
+
+
+

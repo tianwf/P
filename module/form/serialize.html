@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Form</title>
+<link href="../../lib/pretty/prettify.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/tablepay.css">
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../lib/dialog/6.0.4/css/ui-dialog.css">
+<link rel="stylesheet" href="../../css/business.css">
+<script src="../../lib/jquery/1.8.1/jquery.js"></script>
+<script type="text/javascript" src="../../lib/pretty/prettify.js"></script>
+<script src="../../lib/datepicker/4.8.b2/WdatePicker.js"></script>
+<script src="../../lib/underscore/1.8.3/m.js"></script>
+<script src="../../lib/validate/1.13.1/jquery.validate.min.js"></script>
+<script src="../../lib/dialog/6.0.4/dialog-plus.js"></script>
+<script src="../../common/config.js"></script>
+<script src="../../common/common.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#serialize').on('click', function(){
+      var arr = $('#form3').serializeArray();
+      var obj = {}
+      _.each(arr, function(item, i){
+        obj[item.name] = item.value;
+      })
+      alert('请查看控制台输入，Chrome下按F12，然后选中Console标签')
+      //$('#summary').html(obj);
+      console.log(obj)
+      return false;
+    });
+  });
+
+</script>
+</head>
+<body id="main_body" onload="prettyPrint()">
+  <div class="ui-standard">
+    <H1>表单验证</H1>
+    <!--<p><strong>示例</strong></p>-->
+    <div>
+      <form id="form3" novalidate="novalidate">
+        <table class="ui-form-table" width="100%">
+          <tbody>
+            <tr>
+                <td><label class="ui-formDescription"><span class="fn-high">*</span> 问卷名称</label></td>
+                <td>
+                    <input type="text" name="questionnaireName" value="工作情况调查" class="ui-FormInputText ui-width314">
+                </td>
+            </tr>
+            <tr>
+                <td><label  class="ui-formDescription"><span class="fn-high">*</span>手输日期</label></td>
+                <td>
+                    <input type="text" name="date" value="2015-7-19" class="ui-FormInputText ui-width314">
+                </td>
+            </tr>
+            <tr>
+                <td><label  class="ui-formDescription"><span class="fn-high">*</span>数字</label></td>
+                <td>
+                    <input type="text" name="number" value="" class="ui-FormInputText">
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <div id="summary">
+      </div>
+      <div class="ui-normalBtnArea ui-current-1">
+        <a class="ui-normalBtn ui-BGblue ui-largeBtn" href="javascript:;" id="serialize">序列化</a>
+      </div>
+    </div>
+
+    <p><strong>依赖插件</strong></p>
+    <pre class="prettyprint mt-20 fn-clear" id="html">
+      &lt;script src="../../lib/jquery/1.8.1/jquery.js">&lt;/script>
+      &lt;script src="../../lib/underscore/1.8.3/m.js">&lt;/script>
+
+    </pre>
+
+    <p><strong>html代码</strong></p>
+    <pre class="prettyprint mt-20 fn-clear" id="html">
+      &lt;form id="form3" novalidate="novalidate">
+        &lt;table class="ui-form-table" width="100%">
+          &lt;tbody>
+            &lt;tr>
+                &lt;td>&lt;label class="ui-formDescription">&lt;span class="fn-high">*&lt;/span> 问卷名称&lt;/label>&lt;/td>
+                &lt;td>
+                    &lt;input type="text" name="questionnaireName" value="工作情况调查" class="ui-FormInputText ui-width314">
+                &lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>&lt;label  class="ui-formDescription">&lt;span class="fn-high">*&lt;/span>手输日期&lt;/label>&lt;/td>
+                &lt;td>
+                    &lt;input type="text" name="date" value="2015-7-19" class="ui-FormInputText ui-width314">
+                &lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>&lt;label  class="ui-formDescription">&lt;span class="fn-high">*&lt;/span>数字&lt;/label>&lt;/td>
+                &lt;td>
+                    &lt;input type="text" name="number" value="" class="ui-FormInputText">
+                &lt;/td>
+            &lt;/tr>
+          &lt;/tbody>
+        &lt;/table>
+      &lt;/form>
+    </pre>    
+    
+    <p><strong>js代码</strong></p>
+    <pre class="prettyprint mg_t_20 fn-clear" id="html">
+      $(function(){
+        $('#serialize').on('click', function(){
+          var arr = $('#form3').serializeArray();
+          var obj = {}
+          _.each(arr, function(item, i){
+            obj[item.name] = item.value;
+          })
+          alert('请查看控制台输入，Chrome下按F12，然后选中Console标签')
+          //$('#summary').html(obj);
+          console.log(obj)
+          return false;
+        });
+      });
+    </pre>
+  </div>
+</body>
+</html>
