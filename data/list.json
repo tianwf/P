@@ -1,0 +1,17 @@
+{
+    "returnCode":"0",
+    "returnMessage":"",
+    "bean":{},
+    "beans":[
+        {
+            "userName":"黄华林",
+            "age":"13612345611",
+            "address":"郑州"
+        },
+        {
+            "userName":"张亚伟",
+            "age":"13612342358",
+            "address":"郑州"
+        }
+    ]
+}

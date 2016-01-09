@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;background:url(../img/transparent.png);}
+body { min-width:1200px; padding: 0; margin: 0; list-style: none; font-size: 12px; font-family: 'Microsoft yahei',Arial,"宋体", Helvetica, sans-serif; line-height: 16px; cursor: default; color: #333; -webkit-text-size-adjust: none;}
+ul, li, dl, dd, dt, form, p, h1, h2, h3, h4, h5, h6, input, select, pre { padding: 0; margin: 0; list-style: none; outline: none; font-size: 12px; }
+a { outline: none; blr:expression(this.onFocus=this.blur());
+cursor: pointer }
+input { font-family: Arial, Helvetica, sans-serif; }
+.clearfix{ zoom:1}
+.clearfix:after,.clearfix:before{ display:block; clear:both; height:0; font-size:0; overflow:hidden; content:""}
+.clear { clear: both; height: 0px; line-height: 0px; margin: 0px; padding: 0px; border: none; }
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+/* 隐藏, 通常用来与 JS 配合 */
+.fn-hide {
+    display:none;
+}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a:link, a:visited { color: #713c15; text-decoration: none; }
+a:hover,a.pageVisitedStyle, a:active {
+	color: #dc5604;
+	text-decoration: none
+}
+a img { border: none;}
+*:focus { outline: none; blr:expression(this.onFocus=this.blur());}
+.layout{width:1280px;margin:0 auto;}
