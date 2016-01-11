@@ -1,7 +1,9 @@
 {
     "returnCode":"0",
     "returnMessage":"",
-    "bean":{},
+    "bean":{
+        "total":"14"
+    },
     "beans":[
         {
             "userName":"黄华林",

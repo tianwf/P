@@ -1,12 +1,12 @@
 require.config({
     baseUrl : "../",
-    /*
+    
     map: {
         '*': {
-            'style': 'assets/lib/requirejs/css.min'
+            'style': 'lib/requirejs/css.min'
         }
     },
-    */
+    /**/
     paths : {
         /*
         *   避免js文件名和映射名相同，防止打包时被当做js文件重命名
@@ -16,11 +16,11 @@ require.config({
         'hdbHelper' : 'lib/handlebars/helpers',
         'backbone' : 'lib/backbone/1.2.1/m',
         'underscore' : 'lib/underscore/1.8.3/m',
+        'pagination':'lib/pagination/1.2.1/jquery.pagination',
         /*
         'cookie' : 'assets/common/cookie',
         'text' : 'assets/lib/requirejs/text',
         'json2' : 'assets/lib/json2/json2',
-        'pagination':'assets/lib/pagination/1.2.1/jquery.pagination',
         'blockUI' : 'assets/lib/blockUI/2.64/jquery.blockUI.min',
         'artDialog' : 'assets/lib/dialog/6.0.4/dialog',
         'dialog' : 'assets/common/dialog_amd',
@@ -42,11 +42,9 @@ require.config({
         'hdbHelper':{
             deps:['hdb']
         },
+        
         /*
         'ajax':{
-            deps:['jquery']
-        },
-        'pagination':{
             deps:['jquery']
         },
         'artDialog': {
@@ -76,7 +74,8 @@ define([
     'jquery',
     'backbone',
     'hdb',
-    
+    'pagination',
+
     'hdbHelper',
     /*
     'cookie',

@@ -1,4 +1,4 @@
-<table>
+<table class="pi-list">
     <thead>
         {{#each field.items}}
         <th>{{text}}</th>
@@ -8,5 +8,16 @@
         {{/if_object}}
     </thead>
     <tbody></tbody>
-    <tfoot></tfoot>
+    <tfoot>
+        <tr>
+            <td>
+                <div class="checkAllContainer">
+                    <input type="checkbox" />
+                </div>
+                <div class="buttons"></div>
+                <div class="pagination"></div>
+            </td>
+        </tr>
+        
+    </tfoot>
 </table>

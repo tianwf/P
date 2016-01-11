@@ -12,59 +12,55 @@
                     el:'#listContainer',
                     field:{
                         items:[
-                            { text:'姓名1',name:'userName',className:'w120',click:function(item){ } },
+                            { text:'姓名1',name:'userName',className:'w120',click:function(e,item){
+                                //console.log(item); 
+                            },render:function(item,val){
+                                return '<a href="###">'+val + '</a>'
+                            } },
                             { text:'年龄',name:'age',className:'w70' },
                             { text:'联系地址',name:'address' },
                         ],
-                        events:{
-                            rowClick:function(itemData){
-                                //do something.
-                            }
-                        },
                         button:{
                             className:'w90',
                             items:[
-                                { text:'编辑',name:'editor',click:function(item){ } },
+                                { text:'编辑',name:'editor',click:function(e,item){ 
+                                    console.log('editor is checked.')
+                                } },
                                 { text:'查看',name:'viewer' },
                             ]
                         }
                     },
-                    events:{
-                        afterBuild:function(itemData){
-                            //do something.
-                        }
-                    },
                     page:{
-                        perPage:10,
-                        pageCount:5,
-                        pageChange:function(pageIndex,result){
-                            //result 翻页后，重新请求url返回的数据
-                        },
                         button:{
                             items:[
                                 { text:'删除',name:'deleter',click:function(item){ } },
                                 { text:'暂停',name:'stopToggle' },
                             ]
                         }
+                        // pageCount:5,
+                        // pageChange:function(pageIndex,result){
+                        //     //result 翻页后，重新请求url返回的数据
+                        // },
                     },
                     checkBox:{
                         type:'checkbox'
                     },
                     data:{
                         url:'../data/list.json',
-                        param:{
-                            pageNoParam:'pageNo',
-                            perPageParam:'perPage'
-                        },
-                        result:{
-                            recordCountParam:'count',
-                            listParam:'beans'
-                        }
-                        
                     },
                     
                 }
-                new AssemblyList(config);
+                var list = new AssemblyList(config);
+                var searchParam = {
+
+                }
+                list.search(searchParam);
+                // events:{
+                //             rowClick:function(e,itemData){
+                //                 console.log(itemData)
+                //                 //do something.
+                //             }
+                //         },
             });
         });
     </script>
